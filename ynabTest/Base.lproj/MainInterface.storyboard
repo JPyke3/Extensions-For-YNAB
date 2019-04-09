@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="ynabTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpg-Fo-opO">
+                                <rect key="frame" x="8" y="4" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onAdd:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="fvs-cm-MuN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYM-C9-o5B">
+                                <rect key="frame" x="46" y="4" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="++">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onMediumAdd:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Znx-Zf-7E6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrX-5Q-D1K">
+                                <rect key="frame" x="324" y="4" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="--">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onMediumRemove:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="EXb-WO-Lyp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  €0.00  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1r-qk-d8V">
+                                <rect key="frame" x="168.5" y="8" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cornerRadius" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.masksToBounds">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6I-qd-gjB">
+                                <rect key="frame" x="362" y="4" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onRemove:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="MeF-xs-N4C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiy-gv-TAb">
+                                <rect key="frame" x="286" y="4" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="---">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onBiggestRemove:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="jMb-WA-k8H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpw-Gg-7pC">
+                                <rect key="frame" x="84" y="4" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="+++">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onBiggestAdd:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="eXj-lg-PeG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIT-wt-eRI">
+                                <rect key="frame" x="8" y="40" width="51" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="  Food  ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="foodPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="bUT-Ey-HD4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fga-MC-pWs">
+                                <rect key="frame" x="75" y="40" width="49" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="  Gifts  ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="giftsPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="zGd-9n-9Cd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Be-dH-vK6">
+                                <rect key="frame" x="140" y="40" width="80" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="  Cash Out  ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="giftsPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="plJ-5n-REk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7d-Hs-Dh6">
+                                <rect key="frame" x="236" y="40" width="92" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="  Fun Money  ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="giftsPressed:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="r1E-ws-2St"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JD0-ic-q08">
+                                <rect key="frame" x="179" y="84" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9T-DA-hqP">
+                                <rect key="frame" x="191" y="85" width="18" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xpw-Gg-7pC" firstAttribute="leading" secondItem="GYM-C9-o5B" secondAttribute="trailing" constant="8" id="1hh-I4-bfq"/>
+                            <constraint firstItem="n1r-qk-d8V" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="8" id="5Gx-ss-Wqh"/>
+                            <constraint firstItem="I7d-Hs-Dh6" firstAttribute="leading" secondItem="4Be-dH-vK6" secondAttribute="trailing" constant="16" id="70U-SU-MKp"/>
+                            <constraint firstItem="oIT-wt-eRI" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="8" id="EvF-R5-cb2"/>
+                            <constraint firstItem="4Be-dH-vK6" firstAttribute="leading" secondItem="Fga-MC-pWs" secondAttribute="trailing" constant="16" id="Ijf-IA-hnQ"/>
+                            <constraint firstItem="xpw-Gg-7pC" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="4" id="LJ3-Bx-GER"/>
+                            <constraint firstItem="aiy-gv-TAb" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="4" id="NCU-Lf-FHD"/>
+                            <constraint firstItem="oIT-wt-eRI" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="QQk-uQ-nvN"/>
+                            <constraint firstItem="GYM-C9-o5B" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="4" id="RVT-TY-azk"/>
+                            <constraint firstItem="Fga-MC-pWs" firstAttribute="leading" secondItem="oIT-wt-eRI" secondAttribute="trailing" constant="16" id="Sea-ws-8Gl"/>
+                            <constraint firstItem="I7d-Hs-Dh6" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="YMS-It-Bpn"/>
+                            <constraint firstItem="Fga-MC-pWs" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="b5s-43-dHJ"/>
+                            <constraint firstItem="LrX-5Q-D1K" firstAttribute="leading" secondItem="aiy-gv-TAb" secondAttribute="trailing" constant="8" id="dDY-zU-8Sg"/>
+                            <constraint firstItem="LrX-5Q-D1K" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="4" id="eAK-UT-Xt3"/>
+                            <constraint firstItem="D6I-qd-gjB" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="4" id="gha-Hk-Gw2"/>
+                            <constraint firstItem="n1r-qk-d8V" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="hBV-9B-jvi"/>
+                            <constraint firstItem="gpg-Fo-opO" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="4" id="k12-eB-a2D"/>
+                            <constraint firstAttribute="trailing" secondItem="D6I-qd-gjB" secondAttribute="trailing" constant="8" id="nnY-48-m3V"/>
+                            <constraint firstItem="gpg-Fo-opO" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="8" id="rlV-vm-kIw"/>
+                            <constraint firstItem="GYM-C9-o5B" firstAttribute="leading" secondItem="gpg-Fo-opO" secondAttribute="trailing" constant="8" id="vAY-at-ex6"/>
+                            <constraint firstItem="4Be-dH-vK6" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="vPK-x8-AiH"/>
+                            <constraint firstItem="D6I-qd-gjB" firstAttribute="leading" secondItem="LrX-5Q-D1K" secondAttribute="trailing" constant="8" id="wsE-05-bCg"/>
+                            <constraint firstItem="U9T-DA-hqP" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="z3U-Y5-boO"/>
+                            <constraint firstAttribute="bottom" secondItem="U9T-DA-hqP" secondAttribute="bottom" constant="4" id="zSc-js-6CF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="110"/>
+                    <connections>
+                        <outlet property="number" destination="n1r-qk-d8V" id="oIk-LY-8lg"/>
+                        <outlet property="statusLabel" destination="U9T-DA-hqP" id="wWb-rm-32Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="28.794642857142854"/>
+        </scene>
+    </scenes>
+</document>

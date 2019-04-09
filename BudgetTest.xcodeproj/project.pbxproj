@@ -12,7 +12,82 @@
 		5AB0E647225CC25E0030689E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB0E645225CC25E0030689E /* Main.storyboard */; };
 		5AB0E649225CC25E0030689E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB0E648225CC25E0030689E /* Assets.xcassets */; };
 		5AB0E64C225CC25E0030689E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB0E64A225CC25E0030689E /* LaunchScreen.storyboard */; };
+		5AB0E65A225CC2710030689E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB0E659225CC2710030689E /* NotificationCenter.framework */; };
+		5AB0E65D225CC2710030689E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0E65C225CC2710030689E /* TodayViewController.swift */; };
+		5AB0E660225CC2710030689E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB0E65E225CC2710030689E /* MainInterface.storyboard */; };
+		5AB0E664225CC2710030689E /* ynabTest.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5AB0E657225CC2710030689E /* ynabTest.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5AB0E670225D00170030689E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB0E659225CC2710030689E /* NotificationCenter.framework */; };
+		5AB0E685225D00700030689E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB0E683225D00700030689E /* Interface.storyboard */; };
+		5AB0E687225D00720030689E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB0E686225D00720030689E /* Assets.xcassets */; };
+		5AB0E68E225D00720030689E /* ynabWatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5AB0E68D225D00720030689E /* ynabWatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5AB0E693225D00720030689E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0E692225D00720030689E /* InterfaceController.swift */; };
+		5AB0E695225D00720030689E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0E694225D00720030689E /* ExtensionDelegate.swift */; };
+		5AB0E697225D00720030689E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0E696225D00720030689E /* NotificationController.swift */; };
+		5AB0E699225D00720030689E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0E698225D00720030689E /* ComplicationController.swift */; };
+		5AB0E69B225D00730030689E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB0E69A225D00730030689E /* Assets.xcassets */; };
+		5AB0E6A0225D00730030689E /* ynabWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5AB0E681225D00700030689E /* ynabWatchOS.app */; };
+		5AB0E6AF225D22630030689E /* key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB0E6AD225D22190030689E /* key.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AB0E662225CC2710030689E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AB0E636225CC25E0030689E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AB0E656225CC2710030689E;
+			remoteInfo = ynabTest;
+		};
+		5AB0E68F225D00720030689E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AB0E636225CC25E0030689E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AB0E68C225D00720030689E;
+			remoteInfo = "ynabWatchOS Extension";
+		};
+		5AB0E69E225D00730030689E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AB0E636225CC25E0030689E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AB0E680225D00700030689E;
+			remoteInfo = ynabWatchOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AB0E668225CC2710030689E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5AB0E664225CC2710030689E /* ynabTest.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E6A4225D00730030689E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5AB0E68E225D00720030689E /* ynabWatchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E6A8225D00730030689E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5AB0E6A0225D00730030689E /* ynabWatchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5AB0E63E225CC25E0030689E /* BudgetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +97,54 @@
 		5AB0E648225CC25E0030689E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AB0E64B225CC25E0030689E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AB0E64D225CC25E0030689E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB0E657225CC2710030689E /* ynabTest.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ynabTest.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB0E659225CC2710030689E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5AB0E65C225CC2710030689E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		5AB0E65F225CC2710030689E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5AB0E661225CC2710030689E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB0E669225CC2F80030689E /* BudgetTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudgetTest.entitlements; sourceTree = "<group>"; };
+		5AB0E66A225CC3220030689E /* ynabTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ynabTest.entitlements; sourceTree = "<group>"; };
+		5AB0E66F225D00170030689E /* macOSToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = macOSToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB0E681225D00700030689E /* ynabWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ynabWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB0E684225D00700030689E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5AB0E686225D00720030689E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AB0E688225D00720030689E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB0E68D225D00720030689E /* ynabWatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ynabWatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB0E692225D00720030689E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5AB0E694225D00720030689E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5AB0E696225D00720030689E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5AB0E698225D00720030689E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5AB0E69A225D00730030689E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AB0E69C225D00730030689E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB0E69D225D00730030689E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5AB0E6AD225D22190030689E /* key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = key.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5AB0E63B225CC25E0030689E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E654225CC2710030689E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB0E65A225CC2710030689E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E66C225D00160030689E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB0E670225D00170030689E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E68A225D00720030689E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +158,10 @@
 			isa = PBXGroup;
 			children = (
 				5AB0E640225CC25E0030689E /* BudgetTest */,
+				5AB0E65B225CC2710030689E /* ynabTest */,
+				5AB0E682225D00700030689E /* ynabWatchOS */,
+				5AB0E691225D00720030689E /* ynabWatchOS Extension */,
+				5AB0E658225CC2710030689E /* Frameworks */,
 				5AB0E63F225CC25E0030689E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +170,10 @@
 			isa = PBXGroup;
 			children = (
 				5AB0E63E225CC25E0030689E /* BudgetTest.app */,
+				5AB0E657225CC2710030689E /* ynabTest.appex */,
+				5AB0E66F225D00170030689E /* macOSToday.appex */,
+				5AB0E681225D00700030689E /* ynabWatchOS.app */,
+				5AB0E68D225D00720030689E /* ynabWatchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +181,7 @@
 		5AB0E640225CC25E0030689E /* BudgetTest */ = {
 			isa = PBXGroup;
 			children = (
+				5AB0E669225CC2F80030689E /* BudgetTest.entitlements */,
 				5AB0E641225CC25E0030689E /* AppDelegate.swift */,
 				5AB0E643225CC25E0030689E /* ViewController.swift */,
 				5AB0E645225CC25E0030689E /* Main.storyboard */,
@@ -62,6 +190,50 @@
 				5AB0E64D225CC25E0030689E /* Info.plist */,
 			);
 			path = BudgetTest;
+			sourceTree = "<group>";
+		};
+		5AB0E658225CC2710030689E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AB0E659225CC2710030689E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AB0E65B225CC2710030689E /* ynabTest */ = {
+			isa = PBXGroup;
+			children = (
+				5AB0E6AD225D22190030689E /* key.swift */,
+				5AB0E66A225CC3220030689E /* ynabTest.entitlements */,
+				5AB0E65C225CC2710030689E /* TodayViewController.swift */,
+				5AB0E65E225CC2710030689E /* MainInterface.storyboard */,
+				5AB0E661225CC2710030689E /* Info.plist */,
+			);
+			path = ynabTest;
+			sourceTree = "<group>";
+		};
+		5AB0E682225D00700030689E /* ynabWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				5AB0E683225D00700030689E /* Interface.storyboard */,
+				5AB0E686225D00720030689E /* Assets.xcassets */,
+				5AB0E688225D00720030689E /* Info.plist */,
+			);
+			path = ynabWatchOS;
+			sourceTree = "<group>";
+		};
+		5AB0E691225D00720030689E /* ynabWatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5AB0E692225D00720030689E /* InterfaceController.swift */,
+				5AB0E694225D00720030689E /* ExtensionDelegate.swift */,
+				5AB0E696225D00720030689E /* NotificationController.swift */,
+				5AB0E698225D00720030689E /* ComplicationController.swift */,
+				5AB0E69A225D00730030689E /* Assets.xcassets */,
+				5AB0E69C225D00730030689E /* Info.plist */,
+				5AB0E69D225D00730030689E /* PushNotificationPayload.apns */,
+			);
+			path = "ynabWatchOS Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +246,87 @@
 				5AB0E63A225CC25E0030689E /* Sources */,
 				5AB0E63B225CC25E0030689E /* Frameworks */,
 				5AB0E63C225CC25E0030689E /* Resources */,
+				5AB0E668225CC2710030689E /* Embed App Extensions */,
+				5AB0E6A8225D00730030689E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5AB0E663225CC2710030689E /* PBXTargetDependency */,
+				5AB0E69F225D00730030689E /* PBXTargetDependency */,
 			);
 			name = BudgetTest;
 			productName = BudgetTest;
 			productReference = 5AB0E63E225CC25E0030689E /* BudgetTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5AB0E656225CC2710030689E /* ynabTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB0E665225CC2710030689E /* Build configuration list for PBXNativeTarget "ynabTest" */;
+			buildPhases = (
+				5AB0E653225CC2710030689E /* Sources */,
+				5AB0E654225CC2710030689E /* Frameworks */,
+				5AB0E655225CC2710030689E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ynabTest;
+			productName = ynabTest;
+			productReference = 5AB0E657225CC2710030689E /* ynabTest.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5AB0E66E225D00160030689E /* macOSToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB0E67C225D00170030689E /* Build configuration list for PBXNativeTarget "macOSToday" */;
+			buildPhases = (
+				5AB0E66B225D00160030689E /* Sources */,
+				5AB0E66C225D00160030689E /* Frameworks */,
+				5AB0E66D225D00160030689E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macOSToday;
+			productName = macOSToday;
+			productReference = 5AB0E66F225D00170030689E /* macOSToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5AB0E680225D00700030689E /* ynabWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB0E6A5225D00730030689E /* Build configuration list for PBXNativeTarget "ynabWatchOS" */;
+			buildPhases = (
+				5AB0E67F225D00700030689E /* Resources */,
+				5AB0E6A4225D00730030689E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AB0E690225D00720030689E /* PBXTargetDependency */,
+			);
+			name = ynabWatchOS;
+			productName = ynabWatchOS;
+			productReference = 5AB0E681225D00700030689E /* ynabWatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5AB0E68C225D00720030689E /* ynabWatchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB0E6A1225D00730030689E /* Build configuration list for PBXNativeTarget "ynabWatchOS Extension" */;
+			buildPhases = (
+				5AB0E689225D00720030689E /* Sources */,
+				5AB0E68A225D00720030689E /* Frameworks */,
+				5AB0E68B225D00720030689E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ynabWatchOS Extension";
+			productName = "ynabWatchOS Extension";
+			productReference = 5AB0E68D225D00720030689E /* ynabWatchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +339,33 @@
 				ORGANIZATIONNAME = pykeeco;
 				TargetAttributes = {
 					5AB0E63D225CC25E0030689E = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					5AB0E656225CC2710030689E = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					5AB0E66E225D00160030689E = {
+						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+						};
+					};
+					5AB0E680225D00700030689E = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					5AB0E68C225D00720030689E = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
@@ -113,6 +384,10 @@
 			projectRoot = "";
 			targets = (
 				5AB0E63D225CC25E0030689E /* BudgetTest */,
+				5AB0E656225CC2710030689E /* ynabTest */,
+				5AB0E66E225D00160030689E /* macOSToday */,
+				5AB0E680225D00700030689E /* ynabWatchOS */,
+				5AB0E68C225D00720030689E /* ynabWatchOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +403,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AB0E655225CC2710030689E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB0E660225CC2710030689E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E66D225D00160030689E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E67F225D00700030689E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB0E687225D00720030689E /* Assets.xcassets in Resources */,
+				5AB0E685225D00700030689E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E68B225D00720030689E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB0E69B225D00730030689E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +447,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AB0E653225CC2710030689E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB0E65D225CC2710030689E /* TodayViewController.swift in Sources */,
+				5AB0E6AF225D22630030689E /* key.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E66B225D00160030689E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0E689225D00720030689E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB0E697225D00720030689E /* NotificationController.swift in Sources */,
+				5AB0E699225D00720030689E /* ComplicationController.swift in Sources */,
+				5AB0E695225D00720030689E /* ExtensionDelegate.swift in Sources */,
+				5AB0E693225D00720030689E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AB0E663225CC2710030689E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AB0E656225CC2710030689E /* ynabTest */;
+			targetProxy = 5AB0E662225CC2710030689E /* PBXContainerItemProxy */;
+		};
+		5AB0E690225D00720030689E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AB0E68C225D00720030689E /* ynabWatchOS Extension */;
+			targetProxy = 5AB0E68F225D00720030689E /* PBXContainerItemProxy */;
+		};
+		5AB0E69F225D00730030689E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AB0E680225D00700030689E /* ynabWatchOS */;
+			targetProxy = 5AB0E69E225D00730030689E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5AB0E645225CC25E0030689E /* Main.storyboard */ = {
@@ -157,6 +509,22 @@
 				5AB0E64B225CC25E0030689E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5AB0E65E225CC2710030689E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AB0E65F225CC2710030689E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		5AB0E683225D00700030689E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AB0E684225D00700030689E /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,10 +649,13 @@
 		5AB0E651225CC25E0030689E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BudgetTest/BudgetTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QV5G362U53;
 				INFOPLIST_FILE = BudgetTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +670,13 @@
 		5AB0E652225CC25E0030689E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BudgetTest/BudgetTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QV5G362U53;
 				INFOPLIST_FILE = BudgetTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +685,176 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AB0E666225CC2710030689E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ynabTest/ynabTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QV5G362U53;
+				INFOPLIST_FILE = ynabTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pykeeco.BudgetTest.ynabTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AB0E667225CC2710030689E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ynabTest/ynabTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QV5G362U53;
+				INFOPLIST_FILE = ynabTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pykeeco.BudgetTest.ynabTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AB0E67D225D00170030689E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = macOSToday/macOSToday.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QV5G362U53;
+				INFOPLIST_FILE = macOSToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pykeeco.macOSToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5AB0E67E225D00170030689E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = macOSToday/macOSToday.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QV5G362U53;
+				INFOPLIST_FILE = macOSToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pykeeco.macOSToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AB0E6A2225D00730030689E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QV5G362U53;
+				INFOPLIST_FILE = "ynabWatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pykeeco.BudgetTest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		5AB0E6A3225D00730030689E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QV5G362U53;
+				INFOPLIST_FILE = "ynabWatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pykeeco.BudgetTest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		5AB0E6A6225D00730030689E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QV5G362U53;
+				IBSC_MODULE = ynabWatchOS_Extension;
+				INFOPLIST_FILE = ynabWatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pykeeco.BudgetTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		5AB0E6A7225D00730030689E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QV5G362U53;
+				IBSC_MODULE = ynabWatchOS_Extension;
+				INFOPLIST_FILE = ynabWatchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pykeeco.BudgetTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
 			name = Release;
 		};
@@ -331,6 +875,42 @@
 			buildConfigurations = (
 				5AB0E651225CC25E0030689E /* Debug */,
 				5AB0E652225CC25E0030689E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB0E665225CC2710030689E /* Build configuration list for PBXNativeTarget "ynabTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB0E666225CC2710030689E /* Debug */,
+				5AB0E667225CC2710030689E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB0E67C225D00170030689E /* Build configuration list for PBXNativeTarget "macOSToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB0E67D225D00170030689E /* Debug */,
+				5AB0E67E225D00170030689E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB0E6A1225D00730030689E /* Build configuration list for PBXNativeTarget "ynabWatchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB0E6A2225D00730030689E /* Debug */,
+				5AB0E6A3225D00730030689E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB0E6A5225D00730030689E /* Build configuration list for PBXNativeTarget "ynabWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB0E6A6225D00730030689E /* Debug */,
+				5AB0E6A7225D00730030689E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
